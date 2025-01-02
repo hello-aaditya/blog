@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="{% static 'writesBlog/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blog</h1>
+    </header>
+    <nav>
+        <button id="adminButton">Admin Info</button>
+        <button id="blankButton">Button</button>
+    </nav>
+    <main>
+        <div class="blog">
+            <h2>Traveling</h2>
+            <p>Explore the beauty of new destinations and adventures around the world.</p>
+        </div>
+        <div class="blog">
+            <h2>Summer Vacation in the Village</h2>
+            <p>Experience the serene charm of village life during the summer.</p>
+        </div>
+        <div class="blog">
+            <h2>Country Politics</h2>
+            <p>Insightful articles on the latest developments in national politics.</p>
+        </div>
+        <div class="blog">
+            <h2>Notorious Childhood</h2>
+            <p>Relive the mischievous and unforgettable moments of childhood.</p>
+        </div>
+    </main>
+    <footer>
+        <p id="dateTime"></p>
+    </footer>
+    <script src="{% static 'blog/scripts.js' %}"></script>
+</body>
+</html>
